@@ -110,6 +110,10 @@ body > footer p {
 	hyphens: auto;
 }
 
+body > footer .button-holder {
+	margin-top: 15px;
+}
+
 body > footer .mail2-button {
 	display: inline-block;
 	border-color: rgba(0, 200, 0, 1);
