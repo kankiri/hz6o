@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.so
+
+bin/
+build/
+dist/
+lib/
+lib64/
+
+*.log
+
+/.idea/
