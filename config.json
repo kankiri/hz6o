@@ -3,5 +3,8 @@
 	"subtitle": "Example Blog Subtitle",
 	"about-me": "Example About me text",
 	"email": "example@mail.com",
-	"buttons" : []
+	"buttons" : [
+		"Small Twitter Button <a></a><script></script>",
+		"Another Button, Escape \" !"
+	]
 }
