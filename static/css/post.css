@@ -1,0 +1,184 @@
+a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+h1 > a, h2 > a, h3 > a, h4 > a {
+	color: inherit;
+}
+
+strong {
+	font-weight: normal;
+	font-style: italic;
+}
+
+strong > strong {
+	font-weight: bold;
+	font-style: normal;
+}
+
+body {
+	font-family: "Source Sans Pro", sans-serif;
+	color: rgba(0, 0, 0, 0.9);
+	
+	max-width: 710px;
+	margin: 0 auto;
+	padding-left: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+	body {
+		font-size: 85%;
+	}
+}
+
+body > header {
+	height: 90px;
+	margin-top: 10px;
+}
+
+body > header img {
+	float: left;
+	margin-right: 10px;
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0, 200, 0, 1);
+}
+
+body > header h2 {
+	margin: 0px;
+	padding-top: 15px;
+}
+
+body > header h2 > a {
+	/*color: rgba(0, 221, 255, 1);*/
+	color: rgba(0, 200, 0, 1);
+}
+
+body > header p {
+	margin: 0px;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+body > img {
+	display: block;
+	max-width: 118%;
+	position: relative;
+	left: -10%;
+}
+
+body > article {
+	font-family: "Lora", serif;
+	font-size: 125%;
+	line-height: 1.4;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+body > article a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+body > article h1 {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-size: 200%;
+	
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+body > article h2 {
+	margin-top: 15px;
+	margin-bottom: 20px;
+	font-size: 111%;
+	
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+body > article h3 {
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+body > article pre {
+	background-color: rgba(0, 0, 0, 0.03);
+	padding: 10px;
+}
+
+body > article img {
+	max-width: 100%;
+}
+
+body > article aside {
+	background-color: rgba(0, 0, 0, 0.03);
+	padding: 10px;
+	display: inline-block;
+	float: right;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 75%;
+}
+
+@media only screen and (max-width: 500px) {
+	body > article aside {
+		display: block;
+		float: none;
+	}
+}
+
+body > article .formula {
+	display: block;
+	text-align: center;
+	font-style: italic;
+}
+
+body > article .inline-formula {
+	font-style: italic;
+	white-space:nowrap;
+}
+
+body > article .article-type, body > article .article-tags {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 75%;
+}
+
+body > footer {
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: rgba(0, 0, 0, 0.3);
+	margin-top: 40px;
+	max-width: 450px;
+}
+
+body > footer h2 {
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+body > footer p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+body > footer .mail2-button {
+	display: inline-block;
+	border-color: rgba(0, 200, 0, 1);
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	vertical-align: top;
+	font-size: 0px;
+	line-height: 18px;
+}
+
+body > footer .mail2-button > span {
+	vertical-align: middle;
+	padding: 3px 4px 4px 4px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	line-height: 11px;
+	font-weight: bold;
+	color: rgba(0, 200, 0, 1);
+}

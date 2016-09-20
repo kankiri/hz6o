@@ -67,12 +67,13 @@ if __name__ == '__main__':
 			for fn in post_files if fn.endswith('.html')]
 	for post in posts:
 		post.theme = post_theme
+		post.theme_data = config
 		if post.draft:
 			write_post(post, ['local'])
 		else:
 			write_post(post, ['local', 'public'])
 	
-	index = Index()
+	index = Index(config)
 	index.theme = blog_theme
 	index.section_theme = section_theme
 	index.posts = posts

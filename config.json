@@ -1,7 +1,7 @@
 {
 	"title": "Example Blog Title",
 	"subtitle": "Example Blog Subtitle",
-	"header-image": true,
 	"about-me": "Example About me text",
-	"email": "example@mail.com"
+	"email": "example@mail.com",
+	"buttons" : []
 }

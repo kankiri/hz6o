@@ -1,0 +1,132 @@
+a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+h1 > a, h2 > a, h3 > a, h4 > a {
+	color: inherit;
+}
+
+body {
+	max-width: 1010px;
+	margin: 0 auto;
+	padding: 0 5px;
+	
+	font-family: "Source Sans Pro", sans-serif;
+	color: rgba(0, 0, 0, 0.9);
+}
+
+@media only screen and (max-width: 500px) {
+	body {
+		font-size: 85%;
+	}
+}
+
+body > header {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+body > header > h1 {
+	margin-bottom: 5px;
+	font-size: 250%;
+}
+
+body > header > p {
+	margin-top: 5px;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 115%;
+}
+
+body > header img {
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0, 200, 0, 1);
+}
+
+body > section {
+	max-width: 630px;
+	float: left;
+	margin-right: 3%;
+	margin-bottom: 20px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: rgba(0, 0, 0, 0.3);
+	
+	font-family: "Lora", serif;
+	font-size: 115%;
+	line-height: 1.4;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+body > section p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+body > section h2 {
+	margin-bottom: 10px;
+	margin-top: 5px;
+	font-size: 185%;
+	
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+body > section img {
+	max-width: 100%;
+}
+
+body > section .article-type {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 75%;
+}
+
+body > footer {
+	max-width: 310px;
+	float: left;
+	margin-bottom: 20px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: rgba(0, 0, 0, 0.3);
+}
+
+body > footer h2 {
+	margin-bottom: 10px;
+	margin-top: 23px;
+}
+
+body > footer p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+body > footer .mail2-button {
+	display: inline-block;
+	border-color: rgba(0, 200, 0, 1);
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	vertical-align: top;
+	font-size: 0px;
+	line-height: 18px;
+}
+
+body > footer .mail2-button > span {
+	vertical-align: middle;
+	padding: 3px 4px 4px 4px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	line-height: 11px;
+	font-weight: bold;
+	color: rgba(0, 200, 0, 1);
+}

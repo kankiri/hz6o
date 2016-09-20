@@ -1,5 +1,10 @@
 class Index:
-	def __init__(self):
+	def __init__(self, data):
+		self.title = data['title'].strip()
+		self.subtitle = data['subtitle'].strip()
+		self.about = data['about-me'].strip()
+		self.email = data['email'].strip()
+		self.buttons = data['buttons']
 		self.posts = list()
 		self.theme = None
 		self.section_theme = None
@@ -33,6 +38,15 @@ class Index:
 			sections.append(section)
 		result = u'\u000A'.join(line.rstrip() for line
 				in self.theme if line[0] != '#')
+		result = result.replace('#-descr', self.subtitle)
+		result = result.replace('#-title', self.title)
+		result = result.replace('#-abtme', self.about)
+		result = result.replace('#-btons', u'\u2003'.join(self.buttons))
+		result = result.replace('#-email', '@: ' +
+				self.email[0:self.email.index('@')] + 
+				u'\u00A0' + '+' + u'\u00A0' +
+				self.email[self.email.index('@')+1:self.email.rfind('.')] +
+				'·' + self.email[self.email.rfind('.')+1:])
 		if len(sections) > 0:
 			result = result.replace('#-sect1', sections[0])
 		if len(sections) > 1:
@@ -58,6 +72,7 @@ class Post:
 		self.type = None
 		self.content = list()
 		self.theme = None
+		self.theme_data = None
 		if text is not None:
 			self._parse(text)
 	
@@ -83,6 +98,15 @@ class Post:
 		indent = self.theme[0].strip('#\n')
 		result = u'\u000A'.join(line.rstrip() for line
 				in self.theme if line[0] != '#')
+		result = result.replace('#-idscr', self.theme_data['subtitle'])
+		result = result.replace('#-ititl', self.theme_data['title'])
+		result = result.replace('#-abtme', self.theme_data['about-me'])
+		result = result.replace('#-btons', u'\u2003'.join(self.theme_data['buttons']))
+		result = result.replace('#-email', '@: ' +
+				self.theme_data['email'][0:self.theme_data['email'].index('@')] + 
+				u'\u00A0' + '+' + u'\u00A0' +
+				self.theme_data['email'][self.theme_data['email'].index('@')+1:self.theme_data['email'].rfind('.')] +
+				'·' + self.theme_data['email'][self.theme_data['email'].rfind('.')+1:])
 		result = result.replace('#-artcl', (u'\u000A'+indent).join(self.content))
 		result = result.replace('#-title', self.title.replace('&shy;', ''))
 		result = result.replace('#-descr', self.description)
