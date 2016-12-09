@@ -108,7 +108,7 @@ body > article pre {
 	padding: 10px;
 }
 
-body > article pre .inline {
+body > article pre.inline {
 	display: inline-block;
 }
 
