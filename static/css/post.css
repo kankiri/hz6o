@@ -117,8 +117,6 @@ body > article aside {
 	padding: 10px;
 	display: inline-block;
 	float: right;
-	font-family: "Source Sans Pro", sans-serif;
-	font-size: 75%;
 }
 
 @media only screen and (max-width: 500px) {
@@ -139,9 +137,14 @@ body > article .inline-formula {
 	white-space:nowrap;
 }
 
-body > article .article-type, body > article .article-tags {
+body > article aside, body > article .article-type, body > article .article-tags, body > article .img-source {
 	font-family: "Source Sans Pro", sans-serif;
 	font-size: 75%;
+}
+
+body > article .img-source {
+	margin-top: 5px;
+	padding: 0 10px;
 }
 
 body > footer {
