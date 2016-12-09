@@ -108,6 +108,10 @@ body > article pre {
 	padding: 10px;
 }
 
+body > article pre .inline {
+	display: inline-block;
+}
+
 body > article img {
 	max-width: 100%;
 }
@@ -134,7 +138,7 @@ body > article .formula {
 
 body > article .inline-formula {
 	font-style: italic;
-	white-space:nowrap;
+	white-space: nowrap;
 }
 
 body > article aside, body > article .article-type, body > article .article-tags, body > article .img-source {
