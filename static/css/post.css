@@ -110,6 +110,8 @@ body > article pre {
 
 body > article pre.inline {
 	display: inline-block;
+	margin: 0;
+	padding: 1px 5px;
 }
 
 body > article img {
