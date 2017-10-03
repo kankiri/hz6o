@@ -8,3 +8,10 @@ function m2(text) {
 	link.innerHTML = result1;
 	link.setAttribute("href", "mailto:" + result2);
 }
+
+function prerep() {
+	var pres = document.getElementsByTagName("pre");
+	for (i=0; i<pres.length; i++) {
+		pres[i].innerHTML = pres[i].innerHTML.replace(/\n\t*/g, '<br>')
+	}
+}
