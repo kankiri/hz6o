@@ -108,7 +108,8 @@ body > article pre {
 	padding: 10px;
 }
 
-body > article pre.inline {
+body > article code.inline {
+	background-color: rgba(0, 0, 0, 0.03);
 	display: inline-block;
 	margin: 0;
 	padding: 1px 5px;
