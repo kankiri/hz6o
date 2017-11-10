@@ -28,7 +28,7 @@ class Index:
 			section = section.replace('#-arlnk', '/post/' + post.name)
 			section = section.replace('#-atype', post.type)
 			section = section.replace('#-short', post.teaser)
-			if idx <= 3:
+			if idx <= 5:
 				tmp = post.image[:post.image.rfind('.')] + \
 						'-s' + post.image[post.image.rfind('.'):]
 			else:
