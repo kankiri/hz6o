@@ -22,13 +22,7 @@ def create_bones(name):
 	if os.path.exists(name):
 		shutil.rmtree(name)
 	os.makedirs(name)
-	os.makedirs(os.path.join(name,'css'))
-	os.makedirs(os.path.join(name,'img'))
-	os.makedirs(os.path.join(name,'js'))
-	os.makedirs(os.path.join(name,'post'))
-	copy(os.path.join('static','css', 'blog.css'), os.path.join(name, 'css', 'blog.css'))
-	copy(os.path.join('static','css', 'post.css'), os.path.join(name, 'css', 'post.css'))
-	copy(os.path.join('static','js', 'code.js'), os.path.join(name, 'js', 'code.js'))
+	copy('static', name)
 	copy('images', os.path.join(name, 'img'))
 
 def read_file(filename):
