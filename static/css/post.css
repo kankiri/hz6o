@@ -106,6 +106,7 @@ body > article h3 {
 body > article pre {
 	background-color: rgba(0, 0, 0, 0.03);
 	padding: 10px;
+	font-family: monospace;
 }
 
 body > article code.inline {
