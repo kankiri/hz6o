@@ -19,6 +19,7 @@ strong > strong {
 
 body {
 	font-family: "Source Sans Pro", sans-serif;
+	font-size: 16px;
 	color: rgba(0, 0, 0, 0.9);
 	
 	max-width: 710px;
@@ -28,7 +29,7 @@ body {
 
 @media only screen and (max-width: 500px) {
 	body {
-		font-size: 85%;
+		font-size: 13.5px;
 	}
 }
 
@@ -87,7 +88,6 @@ body > article h1 {
 	margin-top: 10px;
 	margin-bottom: 15px;
 	font-size: 200%;
-	
 	font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -95,7 +95,6 @@ body > article h2 {
 	margin-top: 15px;
 	margin-bottom: 20px;
 	font-size: 111%;
-	
 	font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -107,7 +106,8 @@ body > article pre {
 	background-color: rgba(0, 0, 0, 0.03);
 	padding: 10px;
 	font-family: monospace;
-	font-size: 16px;
+	font-size: 80%;
+	overflow-y: auto;
 }
 
 body > article code.inline {
@@ -129,7 +129,6 @@ body > article img {
 body > article aside {
 	background-color: rgba(0, 0, 0, 0.03);
 	padding: 10px;
-	display: inline-block;
 	float: right;
 }
 
