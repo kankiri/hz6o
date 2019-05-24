@@ -54,8 +54,7 @@ class Index:
 		else:
 			result = result.replace('#-sect2', '')
 		if links == 'local':
-			result = result.replace('href="//', 'href="http://')
-			return result.replace('#-link:', '.').replace('-##', '/index.html').replace('..//', '../')
+			return result.replace('href="//', 'href="http://').replace('#-link:', '.').replace('-##', '/index.html').replace('.//', './')
 		else:
 			return result.replace('#-link:', '').replace('-##', '')
 
@@ -115,7 +114,6 @@ class Post:
 		result = result.replace('#-image', self.image)
 		result = result.replace('#-lange', self.language)
 		if links == 'local':
-			result = result.replace('href="//', 'href="http://')
-			return result.replace('#-link:', '.').replace('-##', '/index.html').replace('..//', '../')
+			return result.replace('href="//', 'href="http://').replace('#-link:', '../..').replace('-##', '/index.html').replace('.//', './')
 		else:
 			return result.replace('#-link:', '').replace('-##', '')
